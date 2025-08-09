@@ -1,0 +1,10 @@
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;background:linear-gradient(180deg,#FFFBFF,#E8FFF4);color:#333;margin:0;display:flex;align-items:center;justify-content:center;height:100vh}
+.wrap{width:98%;max-width:480px;padding:18px;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,0.08);background:rgba(255,255,255,0.7);text-align:center}
+.garden{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:12px 0}
+.plot{background:#fff;border-radius:10px;padding:18px;height:90px;display:flex;align-items:center;justify-content:center;flex-direction:column;box-shadow:0 4px 10px rgba(0,0,0,0.04)}
+.controls{display:flex;gap:8px;justify-content:center;margin-bottom:8px;flex-wrap:wrap}
+button{padding:10px 12px;border-radius:10px;border:0;background:#FF4373;color:white;font-weight:600}
+.msg{font-size:14px;color:#666}
+.seed{width:18px;height:18px;border-radius:50%;background:#6B3}
+.sapling{font-size:18px;color:#0A3}
+.flower{font-size:22px}
