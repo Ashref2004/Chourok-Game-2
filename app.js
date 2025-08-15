@@ -1,4 +1,3 @@
-// Pocket Patch - a tiny garden game
 const garden = document.getElementById('garden');
 const msg = document.getElementById('msg');
 const plantBtn = document.getElementById('plantBtn');
@@ -32,7 +31,6 @@ plantBtn.onclick = ()=> {
 }
 waterBtn.onclick = ()=> {
   plots.forEach(p=>{ if(p.state==='seed') p.timer+=1; else if(p.state==='sapling') p.timer+=1;});
-  // evolve
   plots.forEach(p=>{
     if(p.state==='seed' && p.timer>=2) p.state='sapling';
     else if(p.state==='sapling' && p.timer>=4) p.state='flower';
@@ -48,7 +46,6 @@ harvestBtn.onclick = ()=> {
   render();
 }
 
-// simple auto-timer to progress a bit even offline
 setInterval(()=>{
   plots.forEach(p=>{
     if(p.state==='seed' || p.state==='sapling'){ p.timer+=1; }
@@ -56,6 +53,6 @@ setInterval(()=>{
     if(p.state==='sapling' && p.timer>=12) p.state='flower';
   });
   render();
-}, 60000); // every 60s
+}, 60000); 
 
 render();
